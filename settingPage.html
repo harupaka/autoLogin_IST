@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>拡張機能の設定</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        .input-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .input-field {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 200px;
+            padding: 6px;
+            font-size: 14px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid #aaa;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+        }
+        input.cell-input {
+            width: 20px;
+            height: 20px;
+            font-size: 16px;
+            text-align: center;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>設定画面</h2>
+
+    <div class="input-container">
+        <div class="input-field">
+            <label for="student-id">学籍番号</label>
+            <input type="text" id="student-id">
+        </div>
+        <div class="input-field">
+            <label for="password">パスワード</label>
+            <input type="password" id="password">
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <td></td>
+            <th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th>
+        </tr>
+        <tr><th>1</th><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td></tr>
+        <tr><th>2</th><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td></tr>
+        <tr><th>3</th><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td></tr>
+        <tr><th>4</th><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td></tr>
+        <tr><th>5</th><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td></tr>
+        <tr><th>6</th><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td></tr>
+        <tr><th>7</th><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td><td><input class="cell-input" maxlength="1"></td></tr>
+    </table>
+
+    <br>
+    <button id="save-button">保存する</button>
+
+    <script src="settingSave.js"></script>
+</body>
+</html>

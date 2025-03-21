@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "東工大ポータル自動ログイン",
+    "version": "1.0",
+    "description": "東工大ポータルのログイン自動入力を行う拡張機能",
+    "permissions": ["storage"],
+    "options_page": "settingPage.html",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://portal.nap.gsic.titech.ac.jp/GetAccess/*"
+            ],
+            "js": ["inputIdPassword.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}
